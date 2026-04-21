@@ -87,15 +87,15 @@ This can be further automated by using scheduling tools such as Task Scheduler t
 **Pricing**
 - The average regular price across 7,808 products is $6.47
 - Personal Care ($2.90), Bakery ($2.41), and Beauty ($1.79) have 
-  the highest avg price per unit
+  the highest average price per unit
 - The scatter plot shows the majority of products cluster under $5 
-  regular price and under $2 price per unit, with Ambient products 
+  regular price and an under $2 price per unit, with Ambient products 
   (purple) spanning the widest price range
 - Refrigerated and Frozen products are tightly clustered in the 
   lower-left, confirming they are consistently lower-cost per unit
 
 **Promotions**
-- 41.05% of products have an active promotional price at time 
+- 41.05% of products have an active promotional price at the time 
   of extraction
 - Discount % is remarkably consistent across all 9 search groups, 
   with medians ranging narrowly between 17–22%
@@ -106,7 +106,7 @@ This can be further automated by using scheduling tools such as Task Scheduler t
   entire store
 
 **Inventory & Availability**
-- 80.62% of products are HIGH stock at time of extraction, 
+- 80.62% of products are HIGH stock at the time of extraction, 
   indicating strong overall inventory health
 - Produce and Beverages carry the largest OUT OF STOCK segments 
   in the stacked bar, making them the highest-risk categories 
@@ -119,7 +119,7 @@ This can be further automated by using scheduling tools such as Task Scheduler t
 **Assortment**
 - The catalog spans 9 search groups with Pantry, Dairy, and 
   Beverages being the most represented based on the heatmap coverage
-- Availability rates vary meaningfully by storage type — Frozen 
+- Availability rates vary meaningfully by storage type. Frozen 
   availability (53–67%) consistently outperforms Refrigerated 
   (42–50%) across most search groups
 - Several Household and Snacks cells are blank in the heatmap, 
