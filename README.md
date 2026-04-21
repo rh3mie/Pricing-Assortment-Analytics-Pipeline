@@ -22,7 +22,7 @@ Kroger API -> Python ETL -> Processed CSV -> Tableau Dashboard
 
 ## The Data
 
-The dataset was extracted from the API on 4/16/25 and contained 9000+ product records across multiple categories. The dataset volume will change over time based on the run date and real-world changes, but the key fields will remain the same.
+The dataset was extracted from the API on 4/16/26 and contained 9000+ product records across multiple categories. The dataset volume will change over time based on the run date and real-world changes, but the key fields will remain the same.
 
 Key Fields:
 - ```product_id```, ```product_name```, ```brand```
@@ -54,6 +54,23 @@ Added ```validate_data.py``` script to ensure data quality from API extractions.
 ## Tableau Dashboard
 <img width="1363" height="764" alt="image" src="https://github.com/user-attachments/assets/e12ad41c-f414-410a-8adb-5de84e5c5f07" />
 
+[View Live Dashboard Here](https://public.tableau.com/views/pricing_and_assortment_analytics_dashboard/PricingandAssortmentAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+This dashboard consists of 5 interactive visualizations connected by global filters (Search Group, Stock Level, Temperature Indicator, Availability)
+
+- **Inventory Status by Product Group** — 100% stacked bar showing 
+  stock level distribution (HIGH/LOW/OUT OF STOCK) across all 9 
+  search groups
+- **Price vs. Cost Per Unit by Storage Type** — scatter plot revealing 
+  the relationship between regular price and unit economics, colored 
+  by storage type (Ambient/Frozen/Refrigerated)
+- **Avg Price Per Unit by Category** — horizontal bar chart ranking 
+  categories by unit cost, highlighting premium vs. budget segments
+- **Availability Heatmap** — cross-tabulation of search group vs. 
+  storage type showing availability rates
+- **Promotional Discount Distribution by Product Group** — box plot 
+  showing discount % spread per group, revealing which categories 
+  run the deepest and most consistent promotions
 
 ## Automation
 
@@ -66,3 +83,45 @@ The pipeline is automated using a scheduled Python script that:
 This can be further automated by using scheduling tools such as Task Scheduler to run the script daily, or by connecting it to a cloud database (Tableau Public doesn't support this).
 
 ## Key Takeaways
+
+**Pricing**
+- The average regular price across 7,808 products is $6.47
+- Personal Care ($2.90), Bakery ($2.41), and Beauty ($1.79) have 
+  the highest avg price per unit
+- The scatter plot shows the majority of products cluster under $5 
+  regular price and under $2 price per unit, with Ambient products 
+  (purple) spanning the widest price range
+- Refrigerated and Frozen products are tightly clustered in the 
+  lower-left, confirming they are consistently lower-cost per unit
+
+**Promotions**
+- 41.05% of products have an active promotional price at time 
+  of extraction
+- Discount % is remarkably consistent across all 9 search groups, 
+  with medians ranging narrowly between 17–22%
+- Protein shows the widest discount spread (largest IQR box), 
+  meaning promotional depth is least predictable in that category
+- Nearly all groups have outliers reaching 50–60% discount, 
+  suggesting opportunistic deep discounting exists across the 
+  entire store
+
+**Inventory & Availability**
+- 80.62% of products are HIGH stock at time of extraction, 
+  indicating strong overall inventory health
+- Produce and Beverages carry the largest OUT OF STOCK segments 
+  in the stacked bar, making them the highest-risk categories 
+  for stockouts
+- Pantry leads availability at 53% Ambient, while Frozen products 
+  show strong availability (53–67%) across most groups
+- Household has the smallest out-of-stock proportion, suggesting 
+  the most stable replenishment among all groups
+
+**Assortment**
+- The catalog spans 9 search groups with Pantry, Dairy, and 
+  Beverages being the most represented based on the heatmap coverage
+- Availability rates vary meaningfully by storage type — Frozen 
+  availability (53–67%) consistently outperforms Refrigerated 
+  (42–50%) across most search groups
+- Several Household and Snacks cells are blank in the heatmap, 
+  indicating those groups carry little to no Frozen inventory, 
+  which is expected given their category nature
