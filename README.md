@@ -52,6 +52,8 @@ Added ```validate_data.py``` script to ensure data quality from API extractions.
 - Logical validation (promo_price <= regular_price)
 
 ## Tableau Dashboard
+<img width="1363" height="764" alt="image" src="https://github.com/user-attachments/assets/e12ad41c-f414-410a-8adb-5de84e5c5f07" />
+
 
 ## Automation
 
