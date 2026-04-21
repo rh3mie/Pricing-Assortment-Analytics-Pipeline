@@ -22,7 +22,7 @@ Kroger API -> Python ETL -> Processed CSV -> Tableau Dashboard
 
 ## The Data
 
-The dataset was extracted from the API on 4/16/26 and contained 9000+ product records across multiple categories. The dataset volume will change over time based on the run date and real-world changes, but the key fields will remain the same.
+The dataset was extracted from the API on 4/16/26 and contained 7000+ product records across multiple categories. The dataset volume will change over time based on the run date and real-world changes, but the key fields will remain the same.
 
 Key Fields:
 - ```product_id```, ```product_name```, ```brand```
