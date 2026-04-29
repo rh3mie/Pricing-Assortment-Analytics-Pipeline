@@ -98,7 +98,7 @@ This can be further automated by using scheduling tools such as Task Scheduler t
 - 41.05% of products have an active promotional price at the time 
   of extraction
 - Discount % is remarkably consistent across all 9 search groups, 
-  with medians ranging narrowly between 17–22%
+  with medians ranging narrowly between 17–25%
 - Protein shows the widest discount spread (largest IQR box), 
   meaning promotional depth is least predictable in that category
 - Nearly all groups have outliers reaching 50–60% discount, 
