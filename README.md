@@ -125,3 +125,17 @@ This can be further automated by using scheduling tools such as Task Scheduler t
 - Several Household and Snacks cells are blank in the heatmap, 
   indicating those groups carry little to no Frozen inventory, 
   which is expected given their category nature
+
+## Recommendations
+
+Based on the pricing, promotion, inventory, and assortment analysis, several actions could improve category performance:
+
+- **Prioritize stockout monitoring for Produce and Beverages**:  these groups showed the largest out-of-stock segments. These categories should be reviewed more frequently to reduce lost sales risk and improve product availability.
+
+- **Create category-specific promotion strategies**: Instead of applying similar discount levels across all groups. Since median discounts were tightly clustered around 17–25%, Kroger could test deeper or more targeted promotions in categories with weaker movement or higher price sensitivity.
+
+- **Investigate Protein promotion variability**: Protein showed the widest discount spread. This suggests inconsistent promotional depth, making it a strong candidate for more standardized markdown rules or campaign testing.
+
+- **Use price-per-unit analysis to identify premium and value segments**: Especially in Personal Care, Bakery, and Beauty, which had the highest average price per unit. These categories could support margin-focused pricing strategies or premium product positioning.
+
+- **Monitor Refrigerated product availability more closely**: Refrigerated availability generally lagged behind Frozen availability across most search groups. Improving replenishment in these areas could strengthen availability for perishable products.
